@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Thoughts on "The Art and Business of Online Writing" by Nicolas Cole | David H
+    </title>
+    <meta name="author" content="David Högberg">
+    <meta name="description" content="The Art and Business of Online Writing (2020) is a guide to writing and publishing online, written by Nicolas Cole. The content is overall good, but the presentation is repetitive and formulaic, and the structure is really bad.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="alternate" type="application/rss+xml" href="https://davidh.se/index.xml" title="David H">
+    <link rel="sitemap" type="application/xml" href="https://davidh.se/sitemap.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="alternate" href="https://davidh.se/2026/06/thoughts-on-the-art-and-business-of-online-writing-by-nicolas-cole/" hreflang="en">
+    <link rel="alternate" href="https://davidh.se/2026/06/thoughts-on-the-art-and-business-of-online-writing-by-nicolas-cole/" hreflang="x-default">
+    <link rel="alternate" href="https://davidh.se/sv/2026/06/tankar-om-the-art-and-business-of-online-writing-av-nicolas-cole/" hreflang="sv">
+    <style>
+    /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    }
+
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+    font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    overflow-wrap: break-word;
+    }
+
+    p {
+    text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    text-wrap: pretty;
+    }
+
+    /*
+    Layout
+    */
+
+    body {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    /* font-family: 'Iowan Old Style'; */
+    /* font-family: system-ui, sans-serif; */
+    padding: 0 10px;
+    }
+
+    h2,
+    h3 {
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;  */
+    }
+
+    header {
+    max-width: 700px;
+    margin: 40px auto 25px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    h1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    nav {
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+        justify-self: start;
+    }
+
+    div {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        align-self: end;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+            padding: 0 5px;
+        }
+
+        .lang-sel {
+            border-left: 1px solid #ccc;
+            margin-left: 10px;
+            padding-left: 10px;
+            display: flex;
+            gap: 7px;
+        }
+    }
+    }
+
+    main {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    footer {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    /*
+    Colors
+    */
+
+    html {
+    --light: #fefefe;
+    --dark: rgb(28, 27, 34);
+    --less-dark: #333;
+    --less-light: #ccc;
+    --link-light: #8D1C16;
+    --link-dark: #E3564F;
+
+    --text-color: light-dark(var(--dark), var(--light));
+    --muted-text-color: light-dark(var(--less-dark), var(--less-light));
+    --link-color: light-dark(var(--link-light), var(--link-dark));
+    }
+
+    body {
+    background: light-dark(var(--light), var(--dark));
+    color: var(--text-color);
+    }
+
+
+    /*
+    Text
+    */
+
+    h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    }
+
+    h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 1.8rem 0 1rem 0;
+
+    &.section {
+        font-weight: normal;
+    }
+    }
+
+    h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 1.4rem 0 0.6rem 0;
+    }
+
+    h3+p {
+    margin-top: 0.8rem;
+    }
+
+    p {
+    margin: 1rem 0;
+    }
+
+    a {
+    color: var(--link-color);
+
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    &[href^='http']:after {
+        content: '↗';
+        margin-left: 5px;
+        color: rgb(from var(--text-color) r g b / 0.5);
+        /* Removes underline (in some browsers?) */
+        display: inline-block;
+    }
+    }
+
+    time {
+    color: var(--muted-text-color);
+    }
+
+    /*
+    Common elements
+    */
+
+    li {
+    margin: 5px 0;
+    }
+
+    .posts {
+    h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        display: inline;
+    }
+
+    time {
+        font-size: 0.8rem;
+        display: inline-block;
+        margin: 0;
+    }
+    }
+
+    .readings {
+    list-style: none;
+    li {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    time {
+        font-size: 0.8rem;
+        width: 6em;
+        text-align: right;
+        margin: 0;
+    }
+    }
+
+    /*
+    Header
+    */
+
+    header {
+    &>a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+
+    div {
+        font-size: 0.8rem;
+    }
+
+    label {
+        color: var(--muted-text-color);
+    }
+
+    .lang-sel {
+        list-style: none;
+    }
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    }
+
+    /*
+    Footer
+    */
+
+    footer {
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+    text-align: center;
+    }
+
+    /*
+    Front page
+    */
+
+    .latest-post {
+    margin: 15px 0;
+
+    time {
+        font-size: 0.9rem;
+    }
+
+    time,
+    p {
+        margin: 5px 0;
+    }
+    .summary {
+        font-weight: normal;
+    }
+    }
+    ul.posts {
+    padding-left: 30px;
+    }
+
+    /*
+    Article
+    */
+
+    .summary {
+    font-weight: 600;
+    }
+
+    img {
+    height: auto;
+    }
+
+    time {
+    display: block;
+    margin: 1rem 0;
+    color: light-dark(var(--less-dark), var(--less-light));
+    }
+
+    figure {
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+        padding: 10px;
+
+        &:hover {
+            border-color: rgb(from var(--text-color) r g b / 1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        display: block;
+        padding: 10px;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0 1.5rem;
+    }
+    }
+
+    figure.small {
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+    blockquote {
+    padding-left: 35px;
+    font-style: italic;
+    font-size: 18px;
+    margin: 25px 0;
+
+    .note {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+    footer {
+        text-align: right;
+        font-style: normal;
+        font-size: 14px;
+        padding-right: 15px;
+        margin-top: -15px;
+    }
+    }
+
+    article {
+    ul, ol {
+        margin: 25px 0;
+        padding-left: 35px;
+    }
+    }
+    </style>
+    <script>
+    const colorMeta = document.querySelector('meta[name="color-scheme"]');
+    function setColorMode(mode) {
+      colorMeta.setAttribute('content', mode);
+      localStorage.setItem('mode', mode);
+    }
+    addEventListener("DOMContentLoaded", function () {
+      if (mode = localStorage.getItem('mode')) {
+        document.getElementById('color-mode').value = mode
+        setColorMode(mode);
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="/">David H</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/reading-log/">Reading log</a>
+          </li>
+          <li>
+            <a href="/archive/">Archive</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <label for="color-mode">Color</label> <select id="color-mode" onchange="setColorMode(this.value)">
+          <option value="light dark">
+            Auto
+          </option>
+          <option value="light">
+            Light
+          </option>
+          <option value="dark">
+            Dark
+          </option>
+        </select>
+        <ul class="lang-sel">
+          <li>English
+          </li>
+          <li>
+            <a href="/sv/2026/06/tankar-om-the-art-and-business-of-online-writing-av-nicolas-cole/">Svenska</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article>
+        <h1>
+          Thoughts on "The Art and Business of Online Writing" by Nicolas Cole
+        </h1><time datetime="2026-06-20T00:00:00+02:00">20 June 2026</time>
+        <div class="summary">
+          <p>
+            <em>The Art and Business of Online Writing</em> (2020) is a guide to writing and publishing online, written by Nicolas Cole. The content is overall good, but the presentation is repetitive and formulaic, and the structure is really bad.
+          </p>
+        </div>
+        <p>
+          Let’s start out with the good and then cover the bad.
+        </p>
+        <h2 id="interesting-content">
+          Interesting Content
+        </h2>
+        <p>
+          <em>The Art and Business of Online Writing</em> is a very practical book. It covers all the things you need to know for writing online:
+        </p>
+        <ul>
+          <li>How writing online actually works.
+          </li>
+          <li>Where to publish your writing.
+          </li>
+          <li>What to write about, and how to find your target audience.
+          </li>
+          <li>How to write headlines that people will click on, and content that people will read.
+          </li>
+          <li>How to create a personal library of content.
+          </li>
+          <li>How you can make money writing online.
+          </li>
+        </ul>
+        <p>
+          It’s obvious that Cole’s knowledge on the subject goes deep, and that it’s the kind of knowledge that comes from long experience — from having spent a lot of time figuring out how it all actually works. He writes from the inside, and that makes his advice both trustworthy and valuable.
+        </p>
+        <p>
+          I’ve already applied several things from the book in my own writing, and I will probably return to learn more in the future.
+        </p>
+        <h2 id="bad-presentation">
+          Bad Presentation
+        </h2>
+        <p>
+          So the content is good.
+        </p>
+        <p>
+          The presentation and structure though, not so much.
+        </p>
+        <p>
+          I recently listened to a podcast with <a href="https://calnewport.com/">Cal Newport</a> where he talked about writing his new book. In this episode, Cal explained how he spends a lot of time editing, adjusting everything until the pieces really fall into place and click into a tight whole — and that it’s this tight unity that creates an exceptional book.
+        </p>
+        <p>
+          Nicolas Cole should have listened to that advice. Because <em>The Art and Business of Online Writing</em> is far from tight and coherent. It feels more like a long collection of articles strung together into book form, with nothing to unite them into a clear whole. And because of this, the book leaves a weak impression.
+        </p>
+        <p>
+          It doesn’t even have a table of contents.
+        </p>
+        <p>
+          Like, come on.
+        </p>
+        <p>
+          The language isn’t great either. It’s formulaic and repetitive, with too many personal anecdotes. It seems like Cole has applied his formula for writing online to writing this book. But what works for shorter articles online just doesn’t work very well in book form.
+        </p>
+        <h2 id="overall-decent">
+          Overall Decent
+        </h2>
+        <p>
+          That said. I would still recommend this book if you want to start writing online.
+        </p>
+        <p>
+          But it’s a shame, because with the knowledge that Cole obviously has, the book could have been outstanding.
+        </p>
+        <p>
+          Now it’s just decent.
+        </p>
+      </article>
+    </main>
+    <footer>
+      All content copyright 2025-2026. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS feed</a>.
+    </footer>
+  </body>
+</html>

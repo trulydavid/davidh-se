@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Tankar om "boo.com" av Gunnar Lindstedt | David H
+    </title>
+    <meta name="author" content="David Högberg">
+    <meta name="description" content="År 1995 noterades Netscape på den amerikanska börsen. Det blev startskottet för IT-bubblan, som under de nästkommande fem åren skulle växa till en hysterisk hype innan den slutligen kollapsade våren 2000. Ett av de allra hetaste företagen framåt slutet av bubblan var svenska boo.com, och om just detta handlar Gunnar Lindsteds välskrivna bok boo.com – och IT-bubblan som sprack, utgiven 2001.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="alternate" type="application/rss+xml" href="https://davidh.se/index.xml" title="David H">
+    <link rel="sitemap" type="application/xml" href="https://davidh.se/sitemap.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="alternate" href="https://davidh.se/sv/2026/07/tankar-om-boo-dot-com-av-gunnar-lindstedt/" hreflang="sv">
+    <style>
+    /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    }
+
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+    font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    overflow-wrap: break-word;
+    }
+
+    p {
+    text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    text-wrap: pretty;
+    }
+
+    /*
+    Layout
+    */
+
+    body {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    /* font-family: 'Iowan Old Style'; */
+    /* font-family: system-ui, sans-serif; */
+    padding: 0 10px;
+    }
+
+    h2,
+    h3 {
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;  */
+    }
+
+    header {
+    max-width: 700px;
+    margin: 40px auto 25px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    h1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    nav {
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+        justify-self: start;
+    }
+
+    div {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        align-self: end;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+            padding: 0 5px;
+        }
+
+        .lang-sel {
+            border-left: 1px solid #ccc;
+            margin-left: 10px;
+            padding-left: 10px;
+            display: flex;
+            gap: 7px;
+        }
+    }
+    }
+
+    main {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    footer {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    /*
+    Colors
+    */
+
+    html {
+    --light: #fefefe;
+    --dark: rgb(28, 27, 34);
+    --less-dark: #333;
+    --less-light: #ccc;
+    --link-light: #8D1C16;
+    --link-dark: #E3564F;
+
+    --text-color: light-dark(var(--dark), var(--light));
+    --muted-text-color: light-dark(var(--less-dark), var(--less-light));
+    --link-color: light-dark(var(--link-light), var(--link-dark));
+    }
+
+    body {
+    background: light-dark(var(--light), var(--dark));
+    color: var(--text-color);
+    }
+
+
+    /*
+    Text
+    */
+
+    h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    }
+
+    h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 1.8rem 0 1rem 0;
+
+    &.section {
+        font-weight: normal;
+    }
+    }
+
+    h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 1.4rem 0 0.6rem 0;
+    }
+
+    h3+p {
+    margin-top: 0.8rem;
+    }
+
+    p {
+    margin: 1rem 0;
+    }
+
+    a {
+    color: var(--link-color);
+
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    &[href^='http']:after {
+        content: '↗';
+        margin-left: 5px;
+        color: rgb(from var(--text-color) r g b / 0.5);
+        /* Removes underline (in some browsers?) */
+        display: inline-block;
+    }
+    }
+
+    time {
+    color: var(--muted-text-color);
+    }
+
+    /*
+    Common elements
+    */
+
+    li {
+    margin: 5px 0;
+    }
+
+    .posts {
+    h3 {
+        font-size: 1rem;
+        font-weight: normal;
+        display: inline;
+    }
+
+    time {
+        font-size: 0.8rem;
+        display: inline-block;
+        margin: 0;
+    }
+    }
+
+    .readings {
+    list-style: none;
+    li {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    time {
+        font-size: 0.8rem;
+        width: 6em;
+        text-align: right;
+        margin: 0;
+    }
+    }
+
+    /*
+    Header
+    */
+
+    header {
+    &>a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+
+    div {
+        font-size: 0.8rem;
+    }
+
+    label {
+        color: var(--muted-text-color);
+    }
+
+    .lang-sel {
+        list-style: none;
+    }
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    }
+
+    /*
+    Footer
+    */
+
+    footer {
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+    text-align: center;
+    }
+
+    /*
+    Front page
+    */
+
+    .latest-post {
+    margin: 15px 0;
+
+    time {
+        font-size: 0.9rem;
+    }
+
+    time,
+    p {
+        margin: 5px 0;
+    }
+    .summary {
+        font-weight: normal;
+    }
+    }
+    ul.posts {
+    padding-left: 30px;
+    }
+
+    /*
+    Article
+    */
+
+    .summary {
+    font-weight: 600;
+    }
+
+    img {
+    height: auto;
+    }
+
+    time {
+    display: block;
+    margin: 1rem 0;
+    color: light-dark(var(--less-dark), var(--less-light));
+    }
+
+    figure {
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+        padding: 10px;
+
+        &:hover {
+            border-color: rgb(from var(--text-color) r g b / 1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        display: block;
+        padding: 10px;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0 1.5rem;
+    }
+    }
+
+    figure.small {
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+    blockquote {
+    padding-left: 35px;
+    font-style: italic;
+    font-size: 18px;
+    margin: 25px 0;
+
+    .note {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+    footer {
+        text-align: right;
+        font-style: normal;
+        font-size: 14px;
+        padding-right: 15px;
+        margin-top: -15px;
+    }
+    }
+
+    article {
+    ul, ol {
+        margin: 25px 0;
+        padding-left: 35px;
+    }
+    }
+    </style>
+    <script>
+    const colorMeta = document.querySelector('meta[name="color-scheme"]');
+    function setColorMode(mode) {
+      colorMeta.setAttribute('content', mode);
+      localStorage.setItem('mode', mode);
+    }
+    addEventListener("DOMContentLoaded", function () {
+      if (mode = localStorage.getItem('mode')) {
+        document.getElementById('color-mode').value = mode
+        setColorMode(mode);
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="/">David H</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/sv/">Hem</a>
+          </li>
+          <li>
+            <a href="/sv/laslogg/">Läslogg</a>
+          </li>
+          <li>
+            <a href="/sv/arkiv/">Arkiv</a>
+          </li>
+          <li>
+            <a href="/sv/om/">Om</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <label for="color-mode">Färgschema</label> <select id="color-mode" onchange="setColorMode(this.value)">
+          <option value="light dark">
+            Auto
+          </option>
+          <option value="light">
+            Ljust
+          </option>
+          <option value="dark">
+            Mörkt
+          </option>
+        </select>
+        <ul class="lang-sel">
+          <li>Svenska
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article>
+        <h1>
+          Tankar om "boo.com" av Gunnar Lindstedt
+        </h1><time datetime="2026-07-14T00:00:00+02:00">14 juli 2026</time>
+        <div class="summary">
+          <p>
+            År 1995 noterades Netscape på den amerikanska börsen. Det blev startskottet för IT-bubblan, som under de nästkommande fem åren skulle växa till en hysterisk hype innan den slutligen kollapsade våren 2000. Ett av de allra hetaste företagen framåt slutet av bubblan var svenska boo.com, och om just detta handlar Gunnar Lindsteds välskrivna bok <em>boo.com – och IT-bubblan som sprack</em>, utgiven 2001.
+          </p>
+        </div>
+        <h2 id="internet-var-den-nya-ekonomin">
+          Internet var den nya ekonomin
+        </h2>
+        <p>
+          Det hela började i Kalifornien i mitten av 90-talet.
+        </p>
+        <p>
+          Med amerikanska västkust-hippies i frontlinjerna drevs tesen att den nya informationstekniken skulle sopa den “gamla” ekonomin av banan. Det var var dags för de gamla stofilerna att packa ihop och gå hem — nu skulle den “nya” ekonomin ta över. Internet var framtiden, och den var bländande ljus.
+        </p>
+        <p>
+          De som omfamnade den nya tekniken skulle bli vinnare, alla andra förlorare.
+        </p>
+        <p>
+          Investerare världen över drogs med i euforin. Pengarna flödade och värderingarna trissades upp. Man förstod inte riktigt vad man investerade i och affärsmodellerna var extremt luddiga. Men man ville inte missa chansen att köpa en biljett och få en plats på tåget till framtiden.
+        </p>
+        <p>
+          Ett företag som perfekt kom att symbolisera den här eran var boo.com, grundat av tre svenskar.
+        </p>
+        <h2 id="boocom--sportmode-på-nätet">
+          Boo.com — sportmode på nätet
+        </h2>
+        <p>
+          Resan boo.com började 1998.
+        </p>
+        <p>
+          Finanskillen Patrik Hedelin, kufen Ernst Malmsten, och före detta modellen Kajsa Leander var helt övertygade om att Internet var det nya. Radarparet Malmsten och Leander hade precis sålt sina andelar i Bokus, och nu ville de satsa ännu större, ännu djärvare. Hedelin ville hitta ett företag att ta till börsen.
+        </p>
+        <p>
+          Sportmode på nätet, det var framtiden.
+        </p>
+        <p>
+          Tesen var att i den nya tiden skulle ingen vilja handla kläder och skor i affärer längre. Att handla över nätet skulle bli mycket bättre. Det var bekvämare, och nu kunde alla få tillgång till ett sortiment som annars bara fanns i de stora städernas fina butiker.
+        </p>
+        <p>
+          Marginalerna på exklusiva sportkläder var stora, och genom att lansera internationellt redan från dag ett skulle man etablera sig som herre på täppan. I den nya tiden fanns ingen tid att spilla — man var tvungen att satsa stort från start — vinnaren fick allt, förlorarna ingenting.
+        </p>
+        <h2 id="mycket-snack-lite-verkstad">
+          Mycket snack, lite verkstad
+        </h2>
+        <p>
+          Tillsammans var de ett bra team.
+        </p>
+        <p>
+          Ernst hade visionen, Kajsa hade charmen, och Patrik hade kunskapen och kontakterna inom bankvärlden. Idén låg rätt i tiden och investerarna var hungriga. På kort tid lyckades trion dra in tiotals miljoner dollar, bland annat från Benetton och LVMH, och i slutet av 1998 började arbetet sätta fart.
+        </p>
+        <p>
+          Problemet var bara att lika duktiga som de tre var på att charma investerare, lika dåliga var de på teknik och operativ verksamhet.
+        </p>
+        <p>
+          Patrik Hedelin framstår i boken som seriös och kompetent. Men han var framför allt intresserad av att ta företaget till börsen och casha ut. Malmsten och Leander verkar främst ha varit intresserade av uppmärksamhet och glamour som entreprenörer i den nya tiden — mer intresserade av <em>imagen</em> som nyskapare, än det faktiska arbetet.
+        </p>
+        <h2 id="floppen-blev-total">
+          Floppen blev total
+        </h2>
+        <p>
+          Boo.com öppnade kontor runt om i Europa och USA, och började anställa. Efter ett frenetisk arbete karaktäriserat av kaos och slöseri blev webbplatsen till slut färdig för lansering i november 1999, flera månader efter tidtabell.
+        </p>
+        <p>
+          Vid lansering var plattformen faktiskt ganska imponerande rent tekniskt, och det var nog en del duktigt folk inblandade. Men Ernst och Kajsas vision och deras krav på avancerad teknik var helt orealistisk, och gjorde boo.com buggig och oanvändbar för vanliga folk med den tidens långsamma uppkopplingar. Folk var inte heller redo att börja handla på nätet.
+        </p>
+        <p>
+          Kunderna uteblev.
+        </p>
+        <p>
+          Under de kommande månaderna försökte man rätta till problemen, och desperat ta in ännu mer kapital för att täcka de skenande kostnaderna. Men i mars 2000 sprack IT-bubblan, och humöret hos investerare surnade. Misslyckandet blev således ett faktum, och i maj sattes boo.com i konkurs.
+        </p>
+        <p>
+          Man hade då bränt runt 125 miljoner dollar.
+        </p>
+        <h2 id="en-välskriven-och-intressant-bok">
+          En välskriven och intressant bok
+        </h2>
+        <p>
+          Gunnar Lindstedt har gjort ett fantastiskt arbete med den här boken.
+        </p>
+        <p>
+          Särskilt gillar jag hur kritisk han är mot media och journalister. Han visar hur de aktivt hjälpte till att blåsa upp bubblan, och därmed svek både sitt samhällsuppdrag och sina läsare. Istället för att kritiskt granska som de borde ha gjort, lät de sig charmas av entreprenörerna och agera som deras språkrör.
+        </p>
+        <p>
+          Det hela har överlag åldrats bra.
+        </p>
+        <p>
+          Lindstedt är lite väl kritisk till nätshopping i sin slutsats. Vilket dock är helt förståeligt — han skrev trots allt boken redan 2001, precis i kölvattnet av kraschen.
+        </p>
+        <p>
+          Så här 25 år senare med facit i hand kan vi konstatera att de tre grundarna av boo.com ju faktiskt hade rätt: mode på nätet har blivit en gigantisk marknad. Problemet var att de var för tidigt ute, att de hade noll koll på tekniken, och att de var mer intresserade av börsintroduktion, fest och glam snarare än att faktiskt skapa ett fungerande företag.
+        </p>
+        <h2 id="inget-nytt-under-solen--ai-är-dagens-dotcom">
+          Inget nytt under solen — AI är dagens dotcom
+        </h2>
+        <p>
+          Det var nu 26 år sedan IT-bubblan sprack i mars år 2000.
+        </p>
+        <p>
+          Men tyvärr verkar rätt lite har förändrats sedan dess. Mycket av det som hände då i slutet av 90-talet händer igen just nu sommaren 2026 i AI-industrin. Det är precis samma blinda tro på tekniken, samma persondyrkan, samma eufori hos investerare, och samma brist på förståelse och kritisk granskning från journalister.
+        </p>
+        <p>
+          Om ett par tre år får Lindstedt kanske skriva en bok om AI-bubblan som sprack.
+        </p>
+        <p>
+          Under tiden rekommenderar jag den här.
+        </p>
+      </article>
+    </main>
+    <footer>
+      Allt innehåll copyright 2025-2026. Licens: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS-flöde</a>.
+    </footer>
+  </body>
+</html>

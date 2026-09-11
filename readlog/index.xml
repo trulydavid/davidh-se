@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on David H</title>
-    <link>https://davidh.se/</link>
-    <description>Recent content in Welcome on David H</description>
+    <title>Reading log on David H</title>
+    <link>https://davidh.se/readlog/</link>
+    <description>Recent content in Reading log on David H</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0200</lastBuildDate>
-    <atom:link href="https://davidh.se/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://davidh.se/readlog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#34;Brändövägen 8&#34; av Henrik Tikkanen</title>
       <link>https://davidh.se/2026/09/braendoevaegen-8/</link>
@@ -56,20 +56,6 @@
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0200</pubDate>
       <guid>https://davidh.se/2026/06/the-art-and-business-of-online-writing/</guid>
       <description>&lt;p&gt;A book about writing online.&lt;/p&gt;&#xA;&lt;p&gt;Interesting content, bad presentation.&lt;/p&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;https://davidh.se/2026/06/thoughts-on-the-art-and-business-of-online-writing-by-nicolas-cole/&#34;&gt;Thoughts on &amp;ldquo;The Art and Business of Online Writing&amp;rdquo; by Nicolas Cole&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Thoughts on &#34;The Art and Business of Online Writing&#34; by Nicolas Cole</title>
-      <link>https://davidh.se/2026/06/thoughts-on-the-art-and-business-of-online-writing-by-nicolas-cole/</link>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0200</pubDate>
-      <guid>https://davidh.se/2026/06/thoughts-on-the-art-and-business-of-online-writing-by-nicolas-cole/</guid>
-      <description>&lt;p&gt;&lt;em&gt;The Art and Business of Online Writing&lt;/em&gt; (2020) is a guide to writing and publishing online, written by Nicolas Cole.&#xA;The content is overall good, but the presentation is repetitive and formulaic, and the structure is really bad.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://davidh.se/about/</link>
-      <pubDate>Wed, 22 Oct 2025 10:47:06 +0200</pubDate>
-      <guid>https://davidh.se/about/</guid>
-      <description>Hello there</description>
     </item>
   </channel>
 </rss>

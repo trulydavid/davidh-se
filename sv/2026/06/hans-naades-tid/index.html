@@ -101,23 +101,24 @@
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
 
-    h1 {
+    .logo {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        line-height: 1;
     }
 
-    nav {
-        grid-column: 1 / 2;
+    .main-nav {
+        grid-column: 1 / 3;
         grid-row: 2 / 2;
         justify-self: start;
     }
 
-    div {
+    .color-and-lang-nav {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         justify-self: end;
-        align-self: end;
         display: flex;
         align-items: center;
         gap: 5px;
@@ -132,6 +133,27 @@
             padding-left: 10px;
             display: flex;
             gap: 7px;
+        }
+    }
+    }
+
+    @media screen and (width <= 500px) {
+    header {
+        margin-top: 15px;
+        grid-template-rows: 1fr 1f 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        .logo {
+            grid-column: 1 / 1;
+            grid-row: 2 / 3;
+        }
+        .main-nav {
+            grid-column: 1 / 1;
+            grid-row: 3 / 4;
+        }
+        .color-and-lang-nav {
+            grid-column: 1 / 1;
+            grid-row: 1 / 2;
         }
     }
     }
@@ -232,20 +254,6 @@
     }
 
     .posts {
-    h3 {
-        font-size: 1rem;
-        font-weight: normal;
-        display: inline;
-    }
-
-    time {
-        font-size: 0.8rem;
-        display: inline-block;
-        margin: 0;
-    }
-    }
-
-    .readings {
     list-style: none;
     li {
         display: flex;
@@ -254,9 +262,23 @@
     }
     time {
         font-size: 0.8rem;
-        width: 7em;
+        min-width: 7em;
+        max-width: 7em;
         text-align: right;
         margin: 0;
+    }
+    }
+
+    @media screen and (width <= 600px) {
+    .posts {
+        li {
+            display: block;
+            margin-bottom: 15px;
+        }
+        time {
+            display: block;
+            text-align: left;
+        }
     }
     }
 
@@ -320,9 +342,6 @@
     .summary {
         font-weight: normal;
     }
-    }
-    ul.posts {
-    padding-left: 30px;
     }
 
     /*
@@ -420,8 +439,8 @@
   </head>
   <body>
     <header>
-      <a href="/">David H</a>
-      <nav>
+      <a class="logo" href="/">David H</a>
+      <nav class="main-nav">
         <ul>
           <li>
             <a href="/sv/">Hem</a>
@@ -437,7 +456,7 @@
           </li>
         </ul>
       </nav>
-      <div>
+      <div class="color-and-lang-nav">
         <label for="color-mode">Färgschema</label> <select id="color-mode" onchange="setColorMode(this.value)">
           <option value="light dark">
             Auto
@@ -478,7 +497,7 @@
       </article>
     </main>
     <footer>
-      Allt innehåll copyright 2025-2026. Licens: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS-flöde</a>.
+      Copyright 2025-2026. Licens: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS-flöde</a>.
     </footer>
   </body>
 </html>

@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0200</lastBuildDate>
+			<lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0200</lastBuildDate>
 		
 			<atom:link href="https://davidh.se/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>&#34;The Moon is a Harsh Mistress&#34; by Robert A. Heinlein</title>
+				<link>https://davidh.se/2026/09/the-moon-is-a-harsh-mistress/</link>
+				<pubDate>Wed, 30 Sep 2026 00:00:00 +0200</pubDate>
+				<guid>https://davidh.se/2026/09/the-moon-is-a-harsh-mistress/</guid>
+				<description>&lt;p&gt;&lt;em&gt;The Moon is a Harsh Mistress&lt;/em&gt; by Robert A. Heinlein, published 1966.&lt;/p&gt;&#xA;&lt;p&gt;What do I say about this?&lt;/p&gt;&#xA;&lt;p&gt;Libertarian sci-fi with style.&lt;/p&gt;&#xA;&lt;p&gt;The year is 2075.&#xA;People are living on the moon, or Luna as they call it.&#xA;Originally Luna was a penal colony, controlled by Earth.&#xA;It still is, but there are free people living there too, now.&lt;/p&gt;&#xA;&lt;p&gt;One of them is Mannie, a computer technician with a robot arm.&#xA;One day he realizes that the colony supercomputer &amp;mdash; or &amp;ldquo;Mike&amp;rdquo; as he calls it &amp;mdash; has become self-aware.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>&#34;What Is ChatGPT Doing... and Why Does It Work?&#34; by Stephen Wolfram</title>
 				<link>https://davidh.se/2026/09/what-is-chatgpt-doing/</link>

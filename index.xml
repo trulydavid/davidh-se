@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0200</lastBuildDate>
+			<lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0200</lastBuildDate>
 		
 			<atom:link href="https://davidh.se/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>&#34;Drawing for the Absolute Beginner&#34; by Mark &amp; Mary Willenbrink</title>
+				<link>https://davidh.se/2026/10/drawing-for-the-absolute-beginner/</link>
+				<pubDate>Thu, 01 Oct 2026 00:00:00 +0200</pubDate>
+				<guid>https://davidh.se/2026/10/drawing-for-the-absolute-beginner/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Drawing for the Absolute Beginner&lt;/em&gt; by Mark &amp;amp; Mary Willenbrink, published 2006.&lt;/p&gt;&#xA;&lt;p&gt;I am an absolute beginner at drawing.&lt;/p&gt;&#xA;&lt;p&gt;So I thought this book would fit me.&lt;/p&gt;&#xA;&lt;p&gt;But it turns out it was for absolute beginners in name only.&#xA;It starts out with some absolute basics, yes.&#xA;But then it gets much too advanced much too fast and I was completely lost.&#xA;All the demos are too challenging and too far beyond my level to be useful.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>&#34;The Moon is a Harsh Mistress&#34; by Robert A. Heinlein</title>
 				<link>https://davidh.se/2026/09/the-moon-is-a-harsh-mistress/</link>

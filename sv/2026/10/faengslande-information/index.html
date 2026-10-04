@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      "Fängslande information" av Peter Gärdenfors | David H
+    </title>
+    <meta name="author" content="David Högberg">
+    <meta name="description" content="Under större delen av människans utveckling över de senaste 300 000 åren fanns kunskap bara i våra huvuden. De första exemplen på extern kunskap — eller “kunskap i lådor” som Gärdenfors kallar det — är förmodligen grottmålningar som gjordes för sådär 40&nbsp;000 år sedan. Efter det tog det c:a 35&nbsp;000 år innan skriftspråket kom, för ungefär 5&nbsp;000 år sedan. Men det var egentligen inte förrän efter tryckpressens intåg på 1400-talet som lagrad kunskap blev allmänt tillgänglig.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="alternate" type="application/rss+xml" href="https://davidh.se/index.xml" title="David H">
+    <link rel="sitemap" type="application/xml" href="https://davidh.se/sitemap.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="alternate" href="https://davidh.se/sv/2026/10/faengslande-information/" hreflang="sv">
+    <style>
+    /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    }
+
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+    font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    overflow-wrap: break-word;
+    }
+
+    p {
+    text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    text-wrap: pretty;
+    }
+
+    /*
+    Layout
+    */
+
+    body {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    /* font-family: 'Iowan Old Style'; */
+    /* font-family: system-ui, sans-serif; */
+    padding: 0 10px;
+    }
+
+    h2,
+    h3 {
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;  */
+    }
+
+    header {
+    max-width: 700px;
+    margin: 40px auto 25px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    .logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        line-height: 1;
+    }
+
+    .main-nav {
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+        justify-self: start;
+    }
+
+    .color-and-lang-nav {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+            padding: 0 5px;
+        }
+
+        .lang-sel {
+            border-left: 1px solid #ccc;
+            margin-left: 10px;
+            padding-left: 10px;
+            display: flex;
+            gap: 7px;
+        }
+    }
+    }
+
+    @media screen and (width <= 500px) {
+    header {
+        margin-top: 15px;
+        grid-template-rows: 1fr 1f 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        .logo {
+            grid-column: 1 / 1;
+            grid-row: 2 / 3;
+        }
+        .main-nav {
+            grid-column: 1 / 1;
+            grid-row: 3 / 4;
+        }
+        .color-and-lang-nav {
+            grid-column: 1 / 1;
+            grid-row: 1 / 2;
+        }
+    }
+    }
+
+    main {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    footer {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    /*
+    Colors
+    */
+
+    html {
+    --light: #fefefe;
+    --dark: rgb(28, 27, 34);
+    --less-dark: #333;
+    --less-light: #ccc;
+    --link-light: #8D1C16;
+    --link-dark: #E3564F;
+
+    --text-color: light-dark(var(--dark), var(--light));
+    --muted-text-color: light-dark(var(--less-dark), var(--less-light));
+    --link-color: light-dark(var(--link-light), var(--link-dark));
+    }
+
+    body {
+    background: light-dark(var(--light), var(--dark));
+    color: var(--text-color);
+    }
+
+
+    /*
+    Text
+    */
+
+    h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    }
+
+    h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 1.8rem 0 1rem 0;
+
+    &.section {
+        font-weight: normal;
+    }
+    }
+
+    h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 1.4rem 0 0.6rem 0;
+    }
+
+    h3+p {
+    margin-top: 0.8rem;
+    }
+
+    p {
+    margin: 1rem 0;
+    }
+
+    a {
+    color: var(--link-color);
+
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    &[href^='http']:after {
+        content: '↗';
+        margin-left: 5px;
+        color: rgb(from var(--text-color) r g b / 0.5);
+        /* Removes underline (in some browsers?) */
+        display: inline-block;
+    }
+    }
+
+    time {
+    color: var(--muted-text-color);
+    }
+
+    /*
+    Common elements
+    */
+
+    li {
+    margin: 5px 0;
+    }
+
+    .posts {
+    list-style: none;
+    li {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    time {
+        font-size: 0.8rem;
+        min-width: 7em;
+        max-width: 7em;
+        text-align: right;
+        margin: 0;
+    }
+    }
+
+    @media screen and (width <= 600px) {
+    .posts {
+        li {
+            display: block;
+            margin-bottom: 15px;
+        }
+        time {
+            display: block;
+            text-align: left;
+        }
+    }
+    }
+
+    /*
+    Header
+    */
+
+    header {
+    &>a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+
+    div {
+        font-size: 0.8rem;
+    }
+
+    label {
+        color: var(--muted-text-color);
+    }
+
+    .lang-sel {
+        list-style: none;
+    }
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    }
+
+    /*
+    Footer
+    */
+
+    footer {
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+    text-align: center;
+    }
+
+    /*
+    Front page
+    */
+
+    .latest-post {
+    margin: 15px 0;
+
+    time {
+        font-size: 0.9rem;
+    }
+
+    time,
+    p {
+        margin: 5px 0;
+    }
+    .summary {
+        font-weight: normal;
+    }
+    }
+
+    /*
+    Article
+    */
+
+    .summary {
+    font-weight: 600;
+    }
+
+    img {
+    height: auto;
+    }
+
+    time {
+    display: block;
+    margin: 1rem 0;
+    color: light-dark(var(--less-dark), var(--less-light));
+    }
+
+    figure {
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+        padding: 10px;
+
+        &:hover {
+            border-color: rgb(from var(--text-color) r g b / 1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        display: block;
+        padding: 10px;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0 1.5rem;
+    }
+    }
+
+    figure.small {
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+    blockquote {
+    padding-left: 35px;
+    font-style: italic;
+    font-size: 18px;
+    margin: 25px 0;
+
+    .note {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+    footer {
+        text-align: right;
+        font-style: normal;
+        font-size: 14px;
+        padding-right: 15px;
+        margin-top: -15px;
+    }
+    }
+
+    article {
+    ul, ol {
+        margin: 25px 0;
+        padding-left: 35px;
+    }
+    }
+    </style>
+    <script>
+    const colorMeta = document.querySelector('meta[name="color-scheme"]');
+    function setColorMode(mode) {
+      colorMeta.setAttribute('content', mode);
+      localStorage.setItem('mode', mode);
+    }
+    addEventListener("DOMContentLoaded", function () {
+      if (mode = localStorage.getItem('mode')) {
+        document.getElementById('color-mode').value = mode
+        setColorMode(mode);
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/">David H</a>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="/sv/">Hem</a>
+          </li>
+          <li>
+            <a href="/sv/laslogg/">Läslogg</a>
+          </li>
+          <li>
+            <a href="/sv/arkiv/">Arkiv</a>
+          </li>
+          <li>
+            <a href="/sv/om/">Om</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="color-and-lang-nav">
+        <label for="color-mode">Färgschema</label> <select id="color-mode" onchange="setColorMode(this.value)">
+          <option value="light dark">
+            Auto
+          </option>
+          <option value="light">
+            Ljust
+          </option>
+          <option value="dark">
+            Mörkt
+          </option>
+        </select>
+        <ul class="lang-sel">
+          <li>Svenska
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="readlog">
+      <article>
+        <h1>
+          "Fängslande information" av Peter Gärdenfors
+        </h1><time datetime="2026-10-04T00:00:00+02:00">Läst i oktober 2026.</time>
+        <p>
+          Under större delen av människans utveckling över de senaste 300 000 åren fanns kunskap bara i våra huvuden.
+        </p>
+        <p>
+          De första exemplen på extern kunskap — eller “kunskap i lådor” som Gärdenfors kallar det — är förmodligen grottmålningar som gjordes för sådär 40&nbsp;000 år sedan. Efter det tog det c:a 35&nbsp;000 år innan skriftspråket kom, för ungefär 5&nbsp;000 år sedan. Men det var egentligen inte förrän efter tryckpressens intåg på 1400-talet som lagrad kunskap blev allmänt tillgänglig.
+        </p>
+        <p>
+          Att lagra information och kunskap utanför våra hjärnor i form av text, bilder, filmer, och så vidare, är alltså ett mycket nytt fenomen ur ett evolutionärt perspektiv. Vilket betyder att vi inte alls är utvecklade för dagens värld, där vi dygnet runt har tillgång till ofantliga mängder information bara ett knapptryck bort.
+        </p>
+        <p>
+          Hur påverkar denna nya informationsvärld oss?
+        </p>
+        <p>
+          Det är vad Peter Gärdenfors bok <em>Fängslande information</em> från 1996 handlar om.
+        </p>
+        <p>
+          Titeln spelar på hur information både är fängslande i bemärkelsen att den lockar vår uppmärksamhet, men också i den viktigare bemärkelsen att vad vi vet och kan i sin tur styr hur vi uppfattar världen.
+        </p>
+        <p>
+          Det sistnämnda är relaterat till något som inom kognitionsvetenskap kallas <em>kategorisk perception</em>, vilket jag tyckte var det mest intressanta i boken.
+        </p>
+        <p>
+          Kategorisk perception är ett fenomen som innebär att våra hjärnor delar upp världen i fack, eller kategorier, trots att dessa fack egentligen inte finns ute i världen. På en låg nivå kan vi se dettta genom många olika experiment. Till exempel om hur vi uppfattar musik och färger, där frekvenser sorteras in i distinkta fack, och en frekvens som faller nära fackets ändpunkt upplevs som närmare mitten än den i själva verket är. Hjärnan korrigerar alltså “falska” toner så att vi upplever dem som renare.
+        </p>
+        <p>
+          Vad som är intressant är att de flesta av dessa kategorier är inlärda, och kan skilja sig från kultur till kultur. T.ex. är vi västerlänningar vana vid en 12-tonig musikskala, och har svårt att uppskatta arabisk musik som använder en 17-tonig skala. Men om vi lägger tid och energi på det, så kan vi <em>lära</em> hjärnan nya kategorisystem och på så vis vidga våra vyer.
+        </p>
+        <p>
+          När hjärnan har lärt sig ett kategorisystem så påverkar det inte bara vad vi ser i världen, utan också vad vi <em>inte</em> ser. När något faller utanför de kända kategorierna, så kan hjärnan lura oss att se något som egentligen inte finns, eller få oss att ignorera det helt.
+        </p>
+        <p>
+          Och det här händer inte bara på en låg nivå med uppfattning av musiktoner och färger, utan även på en högre begreppslig nivå, vilket Gärdenfors förklarar med sitt begrepp <em>konceptuella rum</em>.
+        </p>
+        <p>
+          Jag gillade den här boken.
+        </p>
+        <p>
+          Dock kunde Gärdenfors kapat de sista fyra kapitlen. De handlar om AI och beslutsteori, och är visserligen intressanta, men jag har svårt att se hur de är speciellt relevanta för bokens huvudtema. Jag hade hellre sett fyra kapitel till om kategorisk perception och konceptuella rum. För som det var nu så skrapade kapitlen om detta mest på ytan, och det kändes som att Gärdenfors har mycket mer att berätta särskilt om sina konceptuella rum.
+        </p>
+        <p>
+          Rekommenderas. Men du kan gott hoppa över kapitel 10-13.
+        </p>
+      </article>
+    </main>
+    <footer>
+      Copyright 2025-2026. Licens: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS-flöde</a>.
+    </footer>
+  </body>
+</html>

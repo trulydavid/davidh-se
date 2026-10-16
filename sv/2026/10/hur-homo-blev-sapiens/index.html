@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      "Hur Homo blev sapiens" av Peter Gärdenfors | David H
+    </title>
+    <meta name="author" content="David Högberg">
+    <meta name="description" content="För ungefär 6 miljoner år sedan förgrenade sig evolutionens träd och resan från chimpansen till den moderna människan tog sin början. Exakt vad som orsakade förgreningen vet vi inte, men en rimlig förklaring är att klimatet förändrades i Afrika, vilket tvingade våra förfäder ut på savannen. Livet där ställde andra krav än livet i djungeln, och det evolutionära trycket började forma oss därefter. Bland annat gjorde savannens rovdjur livet hårdare, vilket fick oss att bilda större grupper än tidigare. Ökad social komplexitet och krav på samarbete krävde en mer avancerad kognition, och våra hjärnor började gradvis växa för att möta de nya utmaningarna.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="alternate" type="application/rss+xml" href="https://davidh.se/index.xml" title="David H">
+    <link rel="sitemap" type="application/xml" href="https://davidh.se/sitemap.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="alternate" href="https://davidh.se/sv/2026/10/hur-homo-blev-sapiens/" hreflang="sv">
+    <style>
+    /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    }
+
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+    font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    overflow-wrap: break-word;
+    }
+
+    p {
+    text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    text-wrap: pretty;
+    }
+
+    /*
+    Layout
+    */
+
+    body {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    /* font-family: 'Iowan Old Style'; */
+    /* font-family: system-ui, sans-serif; */
+    padding: 0 10px;
+    }
+
+    h2,
+    h3 {
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;  */
+    }
+
+    header {
+    max-width: 700px;
+    margin: 40px auto 25px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    .logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        line-height: 1;
+    }
+
+    .main-nav {
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+        justify-self: start;
+    }
+
+    .color-and-lang-nav {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+            padding: 0 5px;
+        }
+
+        .lang-sel {
+            border-left: 1px solid #ccc;
+            margin-left: 10px;
+            padding-left: 10px;
+            display: flex;
+            gap: 7px;
+        }
+    }
+    }
+
+    @media screen and (width <= 500px) {
+    header {
+        margin-top: 15px;
+        grid-template-rows: 1fr 1f 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        .logo {
+            grid-column: 1 / 1;
+            grid-row: 2 / 3;
+        }
+        .main-nav {
+            grid-column: 1 / 1;
+            grid-row: 3 / 4;
+        }
+        .color-and-lang-nav {
+            grid-column: 1 / 1;
+            grid-row: 1 / 2;
+        }
+    }
+    }
+
+    main {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    footer {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    /*
+    Colors
+    */
+
+    html {
+    --light: #fefefe;
+    --dark: rgb(28, 27, 34);
+    --less-dark: #333;
+    --less-light: #ccc;
+    --link-light: #8D1C16;
+    --link-dark: #E3564F;
+
+    --text-color: light-dark(var(--dark), var(--light));
+    --muted-text-color: light-dark(var(--less-dark), var(--less-light));
+    --link-color: light-dark(var(--link-light), var(--link-dark));
+    }
+
+    body {
+    background: light-dark(var(--light), var(--dark));
+    color: var(--text-color);
+    }
+
+
+    /*
+    Text
+    */
+
+    h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    }
+
+    h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 1.8rem 0 1rem 0;
+
+    &.section {
+        font-weight: normal;
+    }
+    }
+
+    h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 1.4rem 0 0.6rem 0;
+    }
+
+    h3+p {
+    margin-top: 0.8rem;
+    }
+
+    p {
+    margin: 1rem 0;
+    }
+
+    a {
+    color: var(--link-color);
+
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    &[href^='http']:after {
+        content: '↗';
+        margin-left: 5px;
+        color: rgb(from var(--text-color) r g b / 0.5);
+        /* Removes underline (in some browsers?) */
+        display: inline-block;
+    }
+    }
+
+    time {
+    color: var(--muted-text-color);
+    }
+
+    /*
+    Common elements
+    */
+
+    li {
+    margin: 5px 0;
+    }
+
+    .posts {
+    list-style: none;
+    li {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    time {
+        font-size: 0.8rem;
+        min-width: 7em;
+        max-width: 7em;
+        text-align: right;
+        margin: 0;
+    }
+    }
+
+    @media screen and (width <= 600px) {
+    .posts {
+        li {
+            display: block;
+            margin-bottom: 15px;
+        }
+        time {
+            display: block;
+            text-align: left;
+        }
+    }
+    }
+
+    /*
+    Header
+    */
+
+    header {
+    &>a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+
+    div {
+        font-size: 0.8rem;
+    }
+
+    label {
+        color: var(--muted-text-color);
+    }
+
+    .lang-sel {
+        list-style: none;
+    }
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    }
+
+    /*
+    Footer
+    */
+
+    footer {
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+    text-align: center;
+    }
+
+    /*
+    Front page
+    */
+
+    .latest-post {
+    margin: 15px 0;
+
+    time {
+        font-size: 0.9rem;
+    }
+
+    time,
+    p {
+        margin: 5px 0;
+    }
+    .summary {
+        font-weight: normal;
+    }
+    }
+
+    /*
+    Article
+    */
+
+    .summary {
+    font-weight: 600;
+    }
+
+    img {
+    height: auto;
+    }
+
+    time {
+    display: block;
+    margin: 1rem 0;
+    color: light-dark(var(--less-dark), var(--less-light));
+    }
+
+    figure {
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+        padding: 10px;
+
+        &:hover {
+            border-color: rgb(from var(--text-color) r g b / 1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        display: block;
+        padding: 10px;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0 1.5rem;
+    }
+    }
+
+    figure.small {
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+    blockquote {
+    padding-left: 35px;
+    font-style: italic;
+    font-size: 18px;
+    margin: 25px 0;
+
+    .note {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+    footer {
+        text-align: right;
+        font-style: normal;
+        font-size: 14px;
+        padding-right: 15px;
+        margin-top: -15px;
+    }
+    }
+
+    article {
+    ul, ol {
+        margin: 25px 0;
+        padding-left: 35px;
+    }
+    }
+    </style>
+    <script>
+    const colorMeta = document.querySelector('meta[name="color-scheme"]');
+    function setColorMode(mode) {
+      colorMeta.setAttribute('content', mode);
+      localStorage.setItem('mode', mode);
+    }
+    addEventListener("DOMContentLoaded", function () {
+      if (mode = localStorage.getItem('mode')) {
+        document.getElementById('color-mode').value = mode
+        setColorMode(mode);
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/">David H</a>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="/sv/">Hem</a>
+          </li>
+          <li>
+            <a href="/sv/laslogg/">Läslogg</a>
+          </li>
+          <li>
+            <a href="/sv/arkiv/">Arkiv</a>
+          </li>
+          <li>
+            <a href="/sv/om/">Om</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="color-and-lang-nav">
+        <label for="color-mode">Färgschema</label> <select id="color-mode" onchange="setColorMode(this.value)">
+          <option value="light dark">
+            Auto
+          </option>
+          <option value="light">
+            Ljust
+          </option>
+          <option value="dark">
+            Mörkt
+          </option>
+        </select>
+        <ul class="lang-sel">
+          <li>Svenska
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="readlog">
+      <article>
+        <h1>
+          "Hur Homo blev sapiens" av Peter Gärdenfors
+        </h1><time datetime="2026-10-16T00:00:00+02:00">Läst i oktober 2026.</time>
+        <p>
+          För ungefär 6 miljoner år sedan förgrenade sig evolutionens träd och resan från chimpansen till den moderna människan tog sin början.
+        </p>
+        <p>
+          Exakt vad som orsakade förgreningen vet vi inte, men en rimlig förklaring är att klimatet förändrades i Afrika, vilket tvingade våra förfäder ut på savannen. Livet där ställde andra krav än livet i djungeln, och det evolutionära trycket började forma oss därefter. Bland annat gjorde savannens rovdjur livet hårdare, vilket fick oss att bilda större grupper än tidigare. Ökad social komplexitet och krav på samarbete krävde en mer avancerad kognition, och våra hjärnor började gradvis växa för att möta de nya utmaningarna.
+        </p>
+        <p>
+          I sin bok <em>Hur Homo blev sapiens</em> från år 2000 lägger kognitionsprofessorn Peter Gärdenfors fram sin förklaring av hur den här resan har skapat den moderna människans tänkande.
+        </p>
+        <p>
+          Den centrala tesen är att uppkomsten av en <em>inre värld</em> har gjort mer avancerat tänkande möjligt. Genom mekanismer i vår hjärna som kan modellera den yttre världen, kan vi skapa och bearbeta allt mer abstrakta representationer av saker och processer i vår omvärld. Gradvis har detta gett oss en förmåga att planera för framtiden, en uppfattning om andras medvetanden och avsikter, en självmedvetenhet, och förmågan att hantera ett symboliskt språk.
+        </p>
+        <p>
+          Jag gillar den här boken. Den är välstrukturerad och välskriven, och Gärdenfors förankrar sitt evolutionärt rimliga resonemang i andras forskning utan att sväva ut alltför mycket i sina egna obekräftade teorier.
+        </p>
+        <p>
+          Rekommenderas om du är intresserad av hur ditt tänkande kom till och hur det fungerar.
+        </p>
+      </article>
+    </main>
+    <footer>
+      Copyright 2025-2026. Licens: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS-flöde</a>.
+    </footer>
+  </body>
+</html>

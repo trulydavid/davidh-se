@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0200</lastBuildDate>
+			<lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0100</lastBuildDate>
 		
 			<atom:link href="https://davidh.se/sv/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Varför är det så svårt att säga nej?</title>
+				<link>https://davidh.se/sv/2026/10/varfor-ar-det-sa-svart-att-saga-nej/</link>
+				<pubDate>Wed, 28 Oct 2026 00:00:00 +0100</pubDate>
+				<guid>https://davidh.se/sv/2026/10/varfor-ar-det-sa-svart-att-saga-nej/</guid>
+				<description>&lt;p&gt;Varför har du så svårt att säga nej, och varför ger det dig dåligt samvete?&#xA;Den amerikanska psykologen Manuel J. Smith har ett bra svar.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>&#34;When I Say No, I Feel Guilty&#34; av Manuel J. Smith</title>
 				<link>https://davidh.se/sv/2026/10/when-i-say-no-i-feel-guilty/</link>
@@ -116,7 +123,7 @@
 				<link>https://davidh.se/sv/2026/07/vagmarken/</link>
 				<pubDate>Tue, 14 Jul 2026 00:00:00 +0200</pubDate>
 				<guid>https://davidh.se/sv/2026/07/vagmarken/</guid>
-				<description>&lt;p&gt;En bok om Gud, arbetet, och naturen.&lt;/p&gt;&#xA;&lt;p&gt;Se &lt;a href=&#34;https://davidh.se/sv/2026/07/tankar-om-v%C3%A4gm%C3%A4rken-av-dag-hammarskj%C3%B6ld/&#34;&gt;Tankar om &amp;ldquo;Vägmärken&amp;rdquo; av Dag Hammarskjöld&lt;/a&gt;.&lt;/p&gt;</description>
+				<description>&lt;p&gt;En bok om Gud, arbetet, och naturen.&lt;/p&gt;&#xA;&lt;p&gt;Se &lt;a href=&#34;../../posts/tankar-om-v%C3%A4gm%C3%A4rken-av-dag-hammarskj%C3%B6ld/index.sv.md&#34;&gt;Tankar om &amp;ldquo;Vägmärken&amp;rdquo; av Dag Hammarskjöld&lt;/a&gt;.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Tankar om &#34;boo.com&#34; av Gunnar Lindstedt</title>
@@ -127,9 +134,9 @@
 			</item>
 			<item>
 				<title>Tankar om &#34;Vägmärken&#34; av Dag Hammarskjöld</title>
-				<link>https://davidh.se/sv/2026/07/tankar-om-v%C3%A4gm%C3%A4rken-av-dag-hammarskj%C3%B6ld/</link>
+				<link>https://davidh.se/sv/2026/07/tankar-om-vagmarken-av-dag-hammarskjold/</link>
 				<pubDate>Tue, 14 Jul 2026 00:00:00 +0200</pubDate>
-				<guid>https://davidh.se/sv/2026/07/tankar-om-v%C3%A4gm%C3%A4rken-av-dag-hammarskj%C3%B6ld/</guid>
+				<guid>https://davidh.se/sv/2026/07/tankar-om-vagmarken-av-dag-hammarskjold/</guid>
 				<description>&lt;p&gt;&lt;em&gt;&amp;ldquo;En sorts &amp;lsquo;vitbok&amp;rsquo; rörande mina förhandlingar med mig själv &amp;mdash; och Gud.&amp;quot;&lt;/em&gt;&#xA;Så beskriver Dag Hammarskjöld själv sina &lt;em&gt;Vägmärken&lt;/em&gt; &amp;mdash; den samling anteckningar som han påbörjade 1925 och skrev fram till sin plötsliga död 1961.&lt;/p&gt;</description>
 			</item>
 			<item>

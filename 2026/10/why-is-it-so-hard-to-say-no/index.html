@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Why Is It So Hard To Say No? | David H
+    </title>
+    <meta name="author" content="David Högberg">
+    <meta name="description" content="Why is it so hard to say no, and when you do, why do you feel guilty? The American psychologist Manuel J. Smith has a good answer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="alternate" type="application/rss+xml" href="https://davidh.se/index.xml" title="David H">
+    <link rel="sitemap" type="application/xml" href="https://davidh.se/sitemap.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="alternate" href="https://davidh.se/2026/10/why-is-it-so-hard-to-say-no/" hreflang="en">
+    <link rel="alternate" href="https://davidh.se/2026/10/why-is-it-so-hard-to-say-no/" hreflang="x-default">
+    <link rel="alternate" href="https://davidh.se/sv/2026/10/varfor-ar-det-sa-svart-att-saga-nej/" hreflang="sv">
+    <style>
+    /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    }
+
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+    font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    overflow-wrap: break-word;
+    }
+
+    p {
+    text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    text-wrap: pretty;
+    }
+
+    /*
+    Layout
+    */
+
+    body {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    /* font-family: 'Iowan Old Style'; */
+    /* font-family: system-ui, sans-serif; */
+    padding: 0 10px;
+    }
+
+    h2,
+    h3 {
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;  */
+    }
+
+    header {
+    max-width: 700px;
+    margin: 40px auto 25px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    .logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        line-height: 1;
+    }
+
+    .main-nav {
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+        justify-self: start;
+    }
+
+    .color-and-lang-nav {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+            padding: 0 5px;
+        }
+
+        .lang-sel {
+            border-left: 1px solid #ccc;
+            margin-left: 10px;
+            padding-left: 10px;
+            display: flex;
+            gap: 7px;
+        }
+    }
+    }
+
+    @media screen and (width <= 500px) {
+    header {
+        margin-top: 15px;
+        grid-template-rows: 1fr 1f 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        .logo {
+            grid-column: 1 / 1;
+            grid-row: 2 / 3;
+        }
+        .main-nav {
+            grid-column: 1 / 1;
+            grid-row: 3 / 4;
+        }
+        .color-and-lang-nav {
+            grid-column: 1 / 1;
+            grid-row: 1 / 2;
+        }
+    }
+    }
+
+    main {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    footer {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    /*
+    Colors
+    */
+
+    html {
+    --light: #fefefe;
+    --dark: rgb(28, 27, 34);
+    --less-dark: #333;
+    --less-light: #ccc;
+    --link-light: #8D1C16;
+    --link-dark: #E3564F;
+
+    --text-color: light-dark(var(--dark), var(--light));
+    --muted-text-color: light-dark(var(--less-dark), var(--less-light));
+    --link-color: light-dark(var(--link-light), var(--link-dark));
+    }
+
+    body {
+    background: light-dark(var(--light), var(--dark));
+    color: var(--text-color);
+    }
+
+
+    /*
+    Text
+    */
+
+    h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    }
+
+    h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 1.8rem 0 1rem 0;
+
+    &.section {
+        font-weight: normal;
+    }
+    }
+
+    h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 1.4rem 0 0.6rem 0;
+    }
+
+    h3+p {
+    margin-top: 0.8rem;
+    }
+
+    p {
+    margin: 1rem 0;
+    }
+
+    a {
+    color: var(--link-color);
+
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    &[href^='http']:after {
+        content: '↗';
+        margin-left: 5px;
+        color: rgb(from var(--text-color) r g b / 0.5);
+        /* Removes underline (in some browsers?) */
+        display: inline-block;
+    }
+    }
+
+    time {
+    color: var(--muted-text-color);
+    }
+
+    /*
+    Common elements
+    */
+
+    li {
+    margin: 5px 0;
+    }
+
+    .posts {
+    list-style: none;
+    li {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    time {
+        font-size: 0.8rem;
+        min-width: 7em;
+        max-width: 7em;
+        text-align: right;
+        margin: 0;
+    }
+    }
+
+    @media screen and (width <= 600px) {
+    .posts {
+        li {
+            display: block;
+            margin-bottom: 15px;
+        }
+        time {
+            display: block;
+            text-align: left;
+        }
+    }
+    }
+
+    /*
+    Header
+    */
+
+    header {
+    &>a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+
+    div {
+        font-size: 0.8rem;
+    }
+
+    label {
+        color: var(--muted-text-color);
+    }
+
+    .lang-sel {
+        list-style: none;
+    }
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    }
+
+    /*
+    Footer
+    */
+
+    footer {
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+    text-align: center;
+    }
+
+    /*
+    Front page
+    */
+
+    .latest-post {
+    margin: 15px 0;
+
+    time {
+        font-size: 0.9rem;
+    }
+
+    time,
+    p {
+        margin: 5px 0;
+    }
+    .summary {
+        font-weight: normal;
+    }
+    }
+
+    /*
+    Article
+    */
+
+    .summary {
+    font-weight: 600;
+    }
+
+    img {
+    height: auto;
+    }
+
+    time {
+    display: block;
+    margin: 1rem 0;
+    color: light-dark(var(--less-dark), var(--less-light));
+    }
+
+    figure {
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+        padding: 10px;
+
+        &:hover {
+            border-color: rgb(from var(--text-color) r g b / 1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        display: block;
+        padding: 10px;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0 1.5rem;
+    }
+    }
+
+    figure.small {
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+    blockquote {
+    padding-left: 35px;
+    font-style: italic;
+    font-size: 18px;
+    margin: 25px 0;
+
+    .note {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+    footer {
+        text-align: right;
+        font-style: normal;
+        font-size: 14px;
+        padding-right: 15px;
+        margin-top: -15px;
+    }
+    }
+
+    article {
+    ul, ol {
+        margin: 25px 0;
+        padding-left: 35px;
+    }
+    }
+    </style>
+    <script>
+    const colorMeta = document.querySelector('meta[name="color-scheme"]');
+    function setColorMode(mode) {
+      colorMeta.setAttribute('content', mode);
+      localStorage.setItem('mode', mode);
+    }
+    addEventListener("DOMContentLoaded", function () {
+      if (mode = localStorage.getItem('mode')) {
+        document.getElementById('color-mode').value = mode
+        setColorMode(mode);
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/">David H</a>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/readlog/">Readlog</a>
+          </li>
+          <li>
+            <a href="/archive/">Archive</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="color-and-lang-nav">
+        <label for="color-mode">Color</label> <select id="color-mode" onchange="setColorMode(this.value)">
+          <option value="light dark">
+            Auto
+          </option>
+          <option value="light">
+            Light
+          </option>
+          <option value="dark">
+            Dark
+          </option>
+        </select>
+        <ul class="lang-sel">
+          <li>English
+          </li>
+          <li>
+            <a href="/sv/2026/10/varfor-ar-det-sa-svart-att-saga-nej/">Svenska</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article>
+        <h1>
+          Why Is It So Hard To Say No?
+        </h1><time datetime="2026-10-30T00:00:00+01:00">30 October 2026</time>
+        <div class="summary">
+          <p>
+            Why is it so hard to say no, and when you do, why do you feel guilty? The American psychologist Manuel J. Smith has a good answer.
+          </p>
+        </div>
+        <h2 id="tldr">
+          TL;DR
+        </h2>
+        <ul>
+          <li>Saying no is fundamentally about handling conflict.
+          </li>
+          <li>You instinctively handle this conflict by fight or flight.
+          </li>
+          <li>Culturally you have learned to do this passively, through manipulation.
+          </li>
+          <li>You have also learned to let others manipulate you.
+          </li>
+          <li>Which makes it possible for others to control you, by using your emotions.
+          </li>
+          <li>The solution is learning a new way to handle the conflict.
+          </li>
+        </ul>
+        <h2 id="why-is-it-so-hard-to-say-no">
+          Why Is It So Hard To Say No?
+        </h2>
+        <p>
+          Why is saying no so difficult, even though you want to?
+        </p>
+        <p>
+          That’s a very good question. At some point, I’m sure you’ve been in a situation where you know that you want to say no, but for some reason you still don’t. And then you find yourself doing something that you actually didn’t want to do, while your frustration slowly grows.
+        </p>
+        <p>
+          Or you’ve even stopped reflecting over it all together, and simply accepted that this is how it is: sometimes you need to say yes no matter what, and such is life.
+        </p>
+        <p>
+          And that’s true — sometimes we all have to do things we don’t want to do. But honestly it’s really not that often, and most of the time you probably say yes because you would feel guilty if you didn’t, rather than because you actually <em>have</em> to.
+        </p>
+        <p>
+          If you’re anything like me, you’ve experienced this many times, and the last time it happened probably wasn’t too long ago. Maybe you even have something right now that you wish you had said no to.
+        </p>
+        <p>
+          But how did you end up in this situation? Where do the feelings of guilt come from? And is there anything you can do about it?
+        </p>
+        <p>
+          The American psychologist Manuel J. Smith has a good answer to these questions. I recently read his book <em>When I Say No, I Feel Guilty</em>, which deals with this topic. The book is not new, it was first published in 1975, and of course a lot has changed since then. But I do think that Dr. Smiths’ perspective is still valuable, as his explanation of the problem is both simple and makes sense, and also because he offers a practical solution to it.
+        </p>
+        <p>
+          As we’ll see, in the end it all boils down to you handling conflicts badly, and the solution is for you to take back control over yourself.
+        </p>
+        <h2 id="the-problem-conflict-management-and-manipulation">
+          The Problem: Conflict Management and Manipulation
+        </h2>
+        <p>
+          To more clearly understand what’s going on I will separate the problem into two parts.
+        </p>
+        <p>
+          The first part is about how you instinctively handle conflicts. The second part is about how this instinct is expressed through a kind of learned manipulation. These two parts are tightly connected, but they’re easier to understand if we go over them one at at time.
+        </p>
+        <p>
+          So I will first cover conflict management, then manipulation, and then finally I’ll show how they together explain why it’s so hard for you to say no.
+        </p>
+        <h2 id="how-we-instintively-handle-conflicts-fight-or-flight">
+          How We Instintively Handle Conflicts: Fight or Flight
+        </h2>
+        <p>
+          Saying no is fundamentally about handling conflicts.
+        </p>
+        <p>
+          Because it’s clear that it’s about conflicts, right? Somebody else wants you to say yes, but you want to say no. Meaning we have a situation in which your will is directly opposed another person’s will, and you somehow have to handle this conflict of interests.
+        </p>
+        <p>
+          Maybe you’ve never thought about it like this, and most likely you’ve never learned how to handle this type of conflict. Instead you’ve simply handled the situation by instinct. The word <em>instinct</em> is the key here, and to understand what’s happening we have to zoom out and have a look at how we humans have developed in an evolutionary context.
+        </p>
+        <p>
+          Like other animals, the evolutionary process has given us humans two built-in systems for dealing with conflicts. A couple of million years ago, when one of our ancestors ran in to a tiger on the African savanna, she could either a) stay and fight, or b) run for her life. Either fight or flight, in other words.
+        </p>
+        <p>
+          Modern society is in many ways very different from life on the Stone Age. But despite this, our biology is more or less the same — when you’re in a conflict with another person in your everyday life, your instinct still tells you that either a) you fight, or b) you run, and you react with either anger (fight) or fear (run).
+        </p>
+        <p>
+          On the instinctual level, exactly the same thing is happening today as two million years ago.
+        </p>
+        <h2 id="passive-aggression-and-passive-avoidance">
+          Passive Aggression and Passive Avoidance
+        </h2>
+        <p>
+          Now we can begin to understand the problem.
+        </p>
+        <p>
+          Saying no creates a conflict, and this triggers deep biological instincts that can be hard to handle, especially if you’re not aware of it happening. That in itself explains some of the difficulty of saying no. But it does not explain the feelings of guilt that often come along with it, which can be the biggest issue.
+        </p>
+        <p>
+          To understand where this guilt comes from, we have to see how in modern society the instinct to fight or flight often takes the form of <em>passive aggression</em> or <em>passive avoidance</em>.
+        </p>
+        <p>
+          As the word <em>passive</em> suggests, nowadays we usually don’t express anger or fear openly, but instead in ways that are more socially acceptable. We have to, because in most conflicts it is no longer accepted to literally run away, and even less so to physically assault somebody.
+        </p>
+        <p>
+          Of course, if you meet a violent person it’s still okay — and totally reasonable — to literally fight or run. But most often when you want to say no, it’s in a day-to-day situation where open violence simply is not an option.
+        </p>
+        <p>
+          To handle these non-violent conflicts with other people, we learn as children to express the instinct to fight or flight <em>passively</em>. So instead of punching somebody in the face, you try to control them through passive aggression, and instead of running away, you withdraw through passive avoidance.
+        </p>
+        <h2 id="a-form-of-unconscious-manipulation">
+          A Form of Unconscious Manipulation
+        </h2>
+        <p>
+          Passive aggression or passive avoidance is when you try to get another person to do what you want them to do, but without openly saying so.
+        </p>
+        <p>
+          But why does this work? How can something passive control another person? And what does it have to do with feelings of guilt?
+        </p>
+        <p>
+          To answer these questions we have to move on from conflict management to the second part of the problem: <em>manipulation</em>. And to understand what that is about, we have to look at what happened to you when you were a kid.
+        </p>
+        <p>
+          Right at the start of your life, when you were a baby, your parents (and other adults) could control you physically. But quite soon, after you had grown bigger and learned to walk and talk and understand what others were saying, that was no longer possible.
+        </p>
+        <p>
+          Physical control therefore turned into <em>psychological</em> control.
+        </p>
+        <p>
+          Your parents started telling you what you could and couldn’t do. Which probably didn’t work out so well, because like every other child, you had discovered the word “no!” and wanted to do things your way. To make you obey, your parents thus started to <em>manipulate</em> your emotions to get you to do what they wanted you to do.
+        </p>
+        <p>
+          So for example if you didn’t want to eat your food, maybe they told you to think of the poor people that didn’t have any food at all. Which you didn’t understand because it was completely illogical, but it still unconsciously planted a feeling of guilt in you — if you don’t eat up your food you are in some way an ungrateful and bad person.
+        </p>
+        <p>
+          Or they told you that you should clean you room because otherwise you were disgusting. You didn’t know what that meant, but you understood by the tone of voice that it was something bad. And if you grew up in a religious family, maybe you were not allowed to listen to certain kinds of music, and God forbid if you had sex before you married, then it was straight to Hell without passing go.
+        </p>
+        <p>
+          There is a million different ways this might have manifested, but the point here isn’t exactly what your parents did or didn’t do, but the underlying principle — instead of telling you do to something just because they wanted you to do it end of story, adults manipulated you into doing it by installing a system of more or less arbitrary rules into your mind.
+        </p>
+        <p>
+          Rules that often played on guilt — if you don’t do X you’re a <em>bad</em> person.
+        </p>
+        <h2 id="to-let-yourself-be-judged-by-others">
+          To Let Yourself Be Judged by Others
+        </h2>
+        <p>
+          Because of this you started to judge yourself not by your own inner will, but by a set of external rules that you internalized. Rules that can now be used by others to control your behavior by manipulating your emotions.
+        </p>
+        <p>
+          For example that it’s <em>wrong</em> to say no because you <em>should</em> be helpful.
+        </p>
+        <p>
+          One thing is important to understand here: this happened more or less unconsciously. When you are manipulated this way, you mostly don’t realize it. Especially not in the moment. If you reflect on it afterwards maybe you see it sometimes, and maybe you get feelings you can’t quite put your finger on. But largely it happens completely without you being aware of it happening.
+        </p>
+        <p>
+          It’s also important to understand that your parents <em>also</em> did this unconsciously, and probably meant well. They needed control and this was the only tool they had. That’s simply how society works — they had unconsciously learned it from their parents, who in turn had learned it from their parents, and so on.
+        </p>
+        <p>
+          But whether conscious or not, in the end the result was the same: you gave up the power to judge yourself, and that made it possible to control you.
+        </p>
+        <h2 id="manipulation-and-justification">
+          Manipulation and Justification
+        </h2>
+        <p>
+          Now we have the answer to why and how passive aggression and passive avoidance works.
+        </p>
+        <p>
+          They are both forms of manipulation, exploiting the fact that you’ve accepted that there is a set of more or less arbitrary rules that govern how you <em>should</em> behave. You’ve learned to let yourself be judged by others, and they now have the power to control your behavior by passively manipulating your emotions.
+        </p>
+        <p>
+          There’s something here that I want to touch upon a little closer. And that is this constant need to rationalize or justify your own decisions. You probably know what I mean — that feeling that you always have to motivate your own decisions on some logical basis, or otherwise they’re not valid.
+        </p>
+        <p>
+          That need to rationalize is a direct effect of you giving up the power to judge yourself.
+        </p>
+        <p>
+          Because of this, when you say no, you always feel you need a good <em>reason</em> for it. It can’t be just because you don’t want to do something, but you must always defend your desire by justifying it by the different rules you’ve learned. So you can’t just say to your fried that <em>no, I don’t want to babysit Charlie on Friday</em> and let that be reason enough, but you feel compelled to come up with some bad excuse like <em>because I need to cook dinner</em> or whatever else you can think of.
+        </p>
+        <p>
+          But when you added that little <em>because</em>, you opened yourself up to being manipulated. Your friend can now counter with <em>no problem, I’ll bring some take-away</em>, whereupon you have to come up with a new excuse that your friend accepts, and so on, until one of you gives in.
+        </p>
+        <p>
+          Note also that <em>you yourself</em> tried to manipulate your friend here. Instead of just letting her face the reality that you don’t want to babysit little Charlie, you tried to make her change her mind through passive manipulation.
+        </p>
+        <p>
+          You are stuck in an endless cycle of manipulation and counter-manipulation.
+        </p>
+        <h2 id="the-result-a-constant-dilemma">
+          The Result: A Constant Dilemma
+        </h2>
+        <p>
+          Now I think we can finally understand why it’s so hard to say no.
+        </p>
+        <p>
+          To summarize:
+        </p>
+        <ul>
+          <li>Fundamentally it’s about handling a conflict.
+          </li>
+          <li>You handle the conflict instinctively, by fight or flight.
+          </li>
+          <li>Culturally you’ve learned to do this passively, through manipulation.
+          </li>
+          <li>You’ve also learned to allow yourself to be manipulated by others.
+          </li>
+          <li>Which works because you’ve given up the power to judge yourself.
+          </li>
+        </ul>
+        <p>
+          The result of all of this is that you’re now stuck in a constant dilemma.
+        </p>
+        <p>
+          If you listen to yourself and say no straight up, you will allow yourself to be judged by the other persons’ disapproval, and feel guilty about going against their wish. But if you instead say yes, then you don’t respect yourself, which will lead you deeper and deeper into self-loathing.
+        </p>
+        <p>
+          Whatever you do, you lose.
+        </p>
+        <h2 id="the-way-out-a-new-way-to-handle-conflicts">
+          The Way Out: A New Way to Handle Conflicts
+        </h2>
+        <p>
+          Okay, okay. But what’s the solution to the problem?
+        </p>
+        <p>
+          In theory the solution is simple: you need to learn a new way to handle conflicts. A way that doesn’t trigger your instinct to fight or flight, and that avoids this whole manipulation complex that I just explained.
+        </p>
+        <p>
+          The instinct to fight or flight has served a legitimate purpose during human evolution, and you would’t been here today if your ancestors on the savanna didn’t have it. And it still fills a legitimate purpose whenever you’re in a truly dangerous situation. But it doesn’t work well at all when dealing with most of the day-to-day conflicts you’re faced with in normal life. To handle them you need to learn a different method. A method that fits the reality that you live in right now.
+        </p>
+        <p>
+          And here we return to Dr. Smith, the American psychologist I talked about in the beginning of the article. The man who wrote the book that all of this comes from. His solution to the problem is something he calls <em>verbal problem solving</em>, and to teach this he’s developed what he calls <em>systematic assertive therapy</em>.
+        </p>
+        <p>
+          Fundamentally this assertive therapy is about one single thing: you have to learn to take back control over yourself. You have to learn that you and only you can judge yourself, that nobody else has that power over you. When you’ve learned this you can no longer be manipulated, and you don’t have to manipulate others either.
+        </p>
+        <p>
+          Simple in theory — in practice of course easier said than done.
+        </p>
+        <p>
+          But with the right techniques and time and practice, it’s absolutely possible to learn it.
+        </p>
+        <p>
+          Exactly what the techniques are, and how you can learn them, I’m afraid I don’t have space or time to cover right now. Because this article is long enough already, and it’s time to cap if off here. But I do hope that at least I’ve answered the question why it’s so hard to say no, and that maybe that in itself can help you a bit along the way. I also recommend that you read the book if you want to know more about this, see the reference below.
+        </p>
+        <p>
+          I’ll return to this topic in future articles, and explain the different techniques of Smith’s systematic assertive therapy. Until then, if you only rememer one thing from this article, remember this:
+        </p>
+        <p>
+          You don’t have to explain yourself, that you don’t want to is reason enough.
+        </p>
+        <h2 id="references">
+          References
+        </h2>
+        <ul>
+          <li>Smith, Manuel J. (1975). <em>When I Say No, I Feel Guilty</em>. Bantam Books. ISBN: 978-0-553-26390-9.
+          </li>
+        </ul>
+      </article>
+    </main>
+    <footer>
+      Copyright 2025-2026. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS feed</a>.
+    </footer>
+  </body>
+</html>

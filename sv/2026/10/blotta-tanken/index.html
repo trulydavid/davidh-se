@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      "Blotta tanken" av Peter Gärdenfors | David H
+    </title>
+    <meta name="author" content="David Högberg">
+    <meta name="description" content="Enligt Gärdenfors själv är hans Blotta tanken från 1992 en samling av några av de “relativt otekniska uppsatser” han skrivit om tänkande och kunskap. Och den innehållsförteckningen stämmer väl rätt bra. Det handlar lite om intelligens och förnuft, det mänskliga medvetandet, hur ord får sin mening, och om det finns någon kunskap som vi inte borde vilja ha (nej). En sak jag tyckte var intressant var hur vi ofta ser på information och kunskap med en kanalmetafor: kunskap är något som skickas från sändare till mottagare. Men lika giltig är vad man skulle kunna kalla en resonansmetafor: kunskap är samklang, att förstå genom att så att säga ratta in sig på samma frekvens som något.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="alternate" type="application/rss+xml" href="https://davidh.se/index.xml" title="David H">
+    <link rel="sitemap" type="application/xml" href="https://davidh.se/sitemap.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="alternate" href="https://davidh.se/sv/2026/10/blotta-tanken/" hreflang="sv">
+    <style>
+    /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+    }
+
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+    display: block;
+    max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+    font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    overflow-wrap: break-word;
+    }
+
+    p {
+    text-wrap: pretty;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    text-wrap: pretty;
+    }
+
+    /*
+    Layout
+    */
+
+    body {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    /* font-family: 'Iowan Old Style'; */
+    /* font-family: system-ui, sans-serif; */
+    padding: 0 10px;
+    }
+
+    h2,
+    h3 {
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;  */
+    }
+
+    header {
+    max-width: 700px;
+    margin: 40px auto 25px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    .logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        line-height: 1;
+    }
+
+    .main-nav {
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+        justify-self: start;
+    }
+
+    .color-and-lang-nav {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+            padding: 0 5px;
+        }
+
+        .lang-sel {
+            border-left: 1px solid #ccc;
+            margin-left: 10px;
+            padding-left: 10px;
+            display: flex;
+            gap: 7px;
+        }
+    }
+    }
+
+    @media screen and (width <= 500px) {
+    header {
+        margin-top: 15px;
+        grid-template-rows: 1fr 1f 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        .logo {
+            grid-column: 1 / 1;
+            grid-row: 2 / 3;
+        }
+        .main-nav {
+            grid-column: 1 / 1;
+            grid-row: 3 / 4;
+        }
+        .color-and-lang-nav {
+            grid-column: 1 / 1;
+            grid-row: 1 / 2;
+        }
+    }
+    }
+
+    main {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    footer {
+    margin: 50px auto 25px auto;
+    max-width: 700px;
+    }
+
+    /*
+    Colors
+    */
+
+    html {
+    --light: #fefefe;
+    --dark: rgb(28, 27, 34);
+    --less-dark: #333;
+    --less-light: #ccc;
+    --link-light: #8D1C16;
+    --link-dark: #E3564F;
+
+    --text-color: light-dark(var(--dark), var(--light));
+    --muted-text-color: light-dark(var(--less-dark), var(--less-light));
+    --link-color: light-dark(var(--link-light), var(--link-dark));
+    }
+
+    body {
+    background: light-dark(var(--light), var(--dark));
+    color: var(--text-color);
+    }
+
+
+    /*
+    Text
+    */
+
+    h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    }
+
+    h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 1.8rem 0 1rem 0;
+
+    &.section {
+        font-weight: normal;
+    }
+    }
+
+    h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin: 1.4rem 0 0.6rem 0;
+    }
+
+    h3+p {
+    margin-top: 0.8rem;
+    }
+
+    p {
+    margin: 1rem 0;
+    }
+
+    a {
+    color: var(--link-color);
+
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    &[href^='http']:after {
+        content: '↗';
+        margin-left: 5px;
+        color: rgb(from var(--text-color) r g b / 0.5);
+        /* Removes underline (in some browsers?) */
+        display: inline-block;
+    }
+    }
+
+    time {
+    color: var(--muted-text-color);
+    }
+
+    /*
+    Common elements
+    */
+
+    li {
+    margin: 5px 0;
+    }
+
+    .posts {
+    list-style: none;
+    li {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    time {
+        font-size: 0.8rem;
+        min-width: 7em;
+        max-width: 7em;
+        text-align: right;
+        margin: 0;
+    }
+    }
+
+    @media screen and (width <= 600px) {
+    .posts {
+        li {
+            display: block;
+            margin-bottom: 15px;
+        }
+        time {
+            display: block;
+            text-align: left;
+        }
+    }
+    }
+
+    /*
+    Header
+    */
+
+    header {
+    &>a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+
+    div {
+        font-size: 0.8rem;
+    }
+
+    label {
+        color: var(--muted-text-color);
+    }
+
+    .lang-sel {
+        list-style: none;
+    }
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    }
+
+    /*
+    Footer
+    */
+
+    footer {
+    font-size: 0.9rem;
+    color: var(--muted-text-color);
+    text-align: center;
+    }
+
+    /*
+    Front page
+    */
+
+    .latest-post {
+    margin: 15px 0;
+
+    time {
+        font-size: 0.9rem;
+    }
+
+    time,
+    p {
+        margin: 5px 0;
+    }
+    .summary {
+        font-weight: normal;
+    }
+    }
+
+    /*
+    Article
+    */
+
+    .summary {
+    font-weight: 600;
+    }
+
+    img {
+    height: auto;
+    }
+
+    time {
+    display: block;
+    margin: 1rem 0;
+    color: light-dark(var(--less-dark), var(--less-light));
+    }
+
+    figure {
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+        padding: 10px;
+
+        &:hover {
+            border-color: rgb(from var(--text-color) r g b / 1);
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        display: block;
+        padding: 10px;
+        border: 1px solid rgb(from var(--text-color) r g b / 0.25);
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px 0 1.5rem;
+    }
+    }
+
+    figure.small {
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+    blockquote {
+    padding-left: 35px;
+    font-style: italic;
+    font-size: 18px;
+    margin: 25px 0;
+
+    .note {
+        font-size: 14px;
+        font-style: normal;
+    }
+
+    footer {
+        text-align: right;
+        font-style: normal;
+        font-size: 14px;
+        padding-right: 15px;
+        margin-top: -15px;
+    }
+    }
+
+    article {
+    ul, ol {
+        margin: 25px 0;
+        padding-left: 35px;
+    }
+    }
+    </style>
+    <script>
+    const colorMeta = document.querySelector('meta[name="color-scheme"]');
+    function setColorMode(mode) {
+      colorMeta.setAttribute('content', mode);
+      localStorage.setItem('mode', mode);
+    }
+    addEventListener("DOMContentLoaded", function () {
+      if (mode = localStorage.getItem('mode')) {
+        document.getElementById('color-mode').value = mode
+        setColorMode(mode);
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/">David H</a>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="/sv/">Hem</a>
+          </li>
+          <li>
+            <a href="/sv/laslogg/">Läslogg</a>
+          </li>
+          <li>
+            <a href="/sv/arkiv/">Arkiv</a>
+          </li>
+          <li>
+            <a href="/sv/om/">Om</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="color-and-lang-nav">
+        <label for="color-mode">Färgschema</label> <select id="color-mode" onchange="setColorMode(this.value)">
+          <option value="light dark">
+            Auto
+          </option>
+          <option value="light">
+            Ljust
+          </option>
+          <option value="dark">
+            Mörkt
+          </option>
+        </select>
+        <ul class="lang-sel">
+          <li>Svenska
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="readlog">
+      <article>
+        <h1>
+          "Blotta tanken" av Peter Gärdenfors
+        </h1><time datetime="2026-10-31T00:00:00+01:00">Läst i oktober 2026.</time>
+        <p>
+          Enligt Gärdenfors själv är hans <em>Blotta tanken</em> från 1992 en samling av några av de “relativt otekniska uppsatser” han skrivit om tänkande och kunskap.
+        </p>
+        <p>
+          Och den innehållsförteckningen stämmer väl rätt bra. Det handlar lite om intelligens och förnuft, det mänskliga medvetandet, hur ord får sin mening, och om det finns någon kunskap som vi inte borde vilja ha (nej).
+        </p>
+        <p>
+          En sak jag tyckte var intressant var hur vi ofta ser på information och kunskap med en <em>kanalmetafor</em>: kunskap är något som skickas från sändare till mottagare. Men lika giltig är vad man skulle kunna kalla en <em>resonansmetafor</em>: kunskap är samklang, att förstå genom att så att säga ratta in sig på samma frekvens som något.
+        </p>
+        <p>
+          I en sån resonansmetafor blir <em>tolkning</em> central — du måste översätta informationen till ditt eget “språk” för att du ska bli en effektiv resonansbotten. Följden av detta blir att om du vill bli bättre på att lära dig (öka din kunskap), då ska du studera humaniora. Varför? Eftersom humanistiska studier lär dig att tolka. Språk ger dig en klarare resonans, historia lär dig att resonera med dåtiden, etnologi med andra kulturer, filosofi med olika idésystem, och så vidare.
+        </p>
+        <p>
+          Så det var en sak jag tyckte var intressant.
+        </p>
+        <p>
+          En annan var hur Gärdenfors förklarar metaforer inom sin teori om <em>konceptuella rum</em>. En metafor i den här modellen är helt enkelt en kombination av uttryck från två olika konceptuella domäner, som belyser en gemensam struktur hos domänerna.
+        </p>
+        <p>
+          Överlag tycker jag väl att boken var sådär. Det är visserligen intressant överlag, men det känns mest som en samling kapitel på olika teman. Vilket till Gärdenfors’ försvar han ju också mycket riktigt säger att det hela är.
+        </p>
+        <p>
+          Men jag är inte speciellt förtjust i böcker som bara är en lös samling kapitel. Jag vill att kapitlen i en bok tillsammans ska bilda en större helhet. En helhet som ger mig en djupare förståelse för någon stor idé. Och en sån bok är <em>Blotta tanken</em> inte.
+        </p>
+        <p>
+          Läs Gärdenfors’ <a href="/sv/2026/10/hur-homo-blev-sapiens/"><em>Hur Homo blev sapiens</em></a> istället.
+        </p>
+      </article>
+    </main>
+    <footer>
+      Copyright 2025-2026. Licens: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY‑NC‑SA&nbsp;4.0</a>. <a href="/index.xml">RSS-flöde</a>.
+    </footer>
+  </body>
+</html>

@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sat, 31 Oct 2026 00:00:00 +0100</lastBuildDate>
+			<lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0100</lastBuildDate>
 		
 			<atom:link href="https://davidh.se/sv/laslogg/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>&#34;2001: A Space Odyssey&#34; av Arthur C. Clarke</title>
+				<link>https://davidh.se/sv/2026/11/2001-a-space-odyssey/</link>
+				<pubDate>Mon, 02 Nov 2026 00:00:00 +0100</pubDate>
+				<guid>https://davidh.se/sv/2026/11/2001-a-space-odyssey/</guid>
+				<description>&lt;p&gt;Boken som ligger till grund för vad som anses en av 1900-talets mest betydelsefulla filmer: &lt;em&gt;2001: Ett rymdäventyr&lt;/em&gt; av Stanley Kubrick.&lt;/p&gt;&#xA;&lt;p&gt;Jag minns att jag såg filmen för kanske 20 år sen.&#xA;Och jag minns att jag då knappt förstod nåt alls av den.&#xA;Nu efter att ha läst boken är allt betydligt klarare.&#xA;För medan filmen förklarar ytterst litet, förklarar boken i stor detalj allt som händer.&lt;/p&gt;&#xA;&lt;p&gt;Från att den utomjordiska monoliten dyker upp och planterar fröet till det mänskliga medvetandet i den förhistoriska ap-människan Moon-Watchers hjärna.&#xA;Till att astronauten Dave Bowman på rymdfärjan Discovery flyger igenom stjärnporten och blir &amp;ldquo;född&amp;rdquo; på nytt.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>&#34;Blotta tanken&#34; av Peter Gärdenfors</title>
 				<link>https://davidh.se/sv/2026/10/blotta-tanken/</link>

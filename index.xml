@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0100</lastBuildDate>
+			<lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0100</lastBuildDate>
 		
 			<atom:link href="https://davidh.se/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>&#34;Thinking, Fast and Slow&#34; by Daniel Kahneman</title>
+				<link>https://davidh.se/2026/11/thinking-fast-and-slow/</link>
+				<pubDate>Fri, 20 Nov 2026 00:00:00 +0100</pubDate>
+				<guid>https://davidh.se/2026/11/thinking-fast-and-slow/</guid>
+				<description>&lt;p&gt;You&amp;rsquo;re not as rational as you think you are.&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s the conclusion you are forced to draw after reading &lt;em&gt;Thinking, Fast and Slow&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The core concept of the book is this:&#xA;the functions of your brain can be divided into two systems.&#xA;One system that is fast, intuitive, and automatic (&lt;em&gt;system 1&lt;/em&gt;).&#xA;And one system that is slow, reflective, and deliberate (&lt;em&gt;system 2&lt;/em&gt;).&lt;/p&gt;&#xA;&lt;p&gt;Most of the time system 2 is in energy savings mode, while system 1 runs the show.&#xA;But if system 1 detects that something unexpected has happened, or runs into a problem that it cannot solve, it can activate system 2 to analyze the situation.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>&#34;Art &amp; Fear&#34; by David Bayles and Ted Orland</title>
 				<link>https://davidh.se/2026/11/art-and-fear/</link>

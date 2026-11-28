@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0100</lastBuildDate>
+			<lastBuildDate>Sat, 28 Nov 2026 00:00:00 +0100</lastBuildDate>
 		
 			<atom:link href="https://davidh.se/readlog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>&#34;Do Androids Dream of Electric Sheep?&#34; by Philip K. Dick</title>
+				<link>https://davidh.se/2026/11/do-androids-dream-of-electric-sheep/</link>
+				<pubDate>Sat, 28 Nov 2026 00:00:00 +0100</pubDate>
+				<guid>https://davidh.se/2026/11/do-androids-dream-of-electric-sheep/</guid>
+				<description>&lt;p&gt;Future Earth has been scorched by nuclear war; radioactive dust is everywhere.&#xA;Most people have emigrated to colonize Mars, while most of the hard labor has been assigned to synthetic humanoid androids.&lt;/p&gt;&#xA;&lt;p&gt;Left on Earth are those not permitted to leave &amp;mdash; the &amp;ldquo;specials&amp;rdquo;, mentally retarded by radiation damage &amp;mdash; and those whose work requires them to stay.&lt;/p&gt;&#xA;&lt;p&gt;Rick Deckard is in the second category; bound to Earth by his job.&#xA;A bounty hunter with the San Francisco police department, his task is to hunt down and &amp;ldquo;retire&amp;rdquo; (i.e. kill) escaped androids.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>&#34;Neuromancer&#34; by William Gibson</title>
 				<link>https://davidh.se/2026/11/neuromancer/</link>
